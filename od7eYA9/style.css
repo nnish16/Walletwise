@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.gradient-text {
+    background-image: linear-gradient(to right, #60a5fa, #818cf8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.mockup-image {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #020617;
+    transform: perspective(1500px) rotateX(5deg);
+    transition: transform 0.3s ease;
+}
+
+#hero .mockup-image {
+    transform: perspective(2000px) rotateX(15deg) scale(0.9);
+    box-shadow: 0 50px 100px -30px rgba(0, 0, 0, 0.6);
+}
+
+.mockup-image:hover {
+     transform: perspective(1500px) rotateX(0deg) scale(1.02);
+}
+
+.bg-grid-slate-700\/\[0\.05\] {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='%23334155' stroke-opacity='0.1'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+}
+
+.animated-element {
+    opacity: 0;
+}
